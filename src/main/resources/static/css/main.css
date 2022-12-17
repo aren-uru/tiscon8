@@ -307,3 +307,8 @@ td {
     border-radius: .28571429rem;
     border: 1px solid rgba(34,36,38,.15);
 }
+
+.error{
+    color: #FF0000;
+    font-size: 14px;
+}
