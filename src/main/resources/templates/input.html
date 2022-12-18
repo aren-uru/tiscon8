@@ -29,7 +29,7 @@
           <ul th:if="${#fields.hasErrors('customerName')}">
             <li class="error" th:each="err : ${#fields.errors('customerName')}" th:text="${err}"></li>
           </ul>
-          <input type="text" id="customerName" name="customerName" th:field="*{customerName}" class="form-control" value="山田太郎" placeholder="山田太郎"/>
+          <input type="text" id="customerName" name="customerName" th:field="*{customerName}" class="form-control" value="山田太郎" placeholder="例)山田太郎"/>
         </div>
         <div class="form-group">
           <label for="tel">連絡先TEL (ハイフンなしで入力してください。)</label>
@@ -44,6 +44,13 @@
             <li class="error" th:each="err : ${#fields.errors('email')}" th:text="${err}"></li>
           </ul>
           <input type="text" id="email" name="email" th:field="*{email}" class="form-control" value="test@test.com" placeholder="test@test.com"/>
+        </div>
+        <div class="form-group">
+          <label for="month">引越し月</label>
+          <ul th:if="${#fields.hasErrors('month')}">
+            <li class="error" th:each="err : ${#fields.errors('month')}" th:text="${err}"></li>
+          </ul>
+          <input type="text" id="month" name="month" th:field="*{month}" class="form-control" value="3" placeholder="3"/>
         </div>
         <div class="sub-title">集荷元・お届け先</div>
         <div class="form-group">
