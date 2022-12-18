@@ -83,8 +83,13 @@ public class UserOrderForm {
         return oldPrefectureId;
     }
 
-    public void setOldPrefectureId(String oldPrefectureId) {
-        this.oldPrefectureId = oldPrefectureId;
+    public void setOldPrefectureId(String oldPrefectureId) throws Exception {
+        if (1 <= Integer.parseInt(oldPrefectureId) && Integer.parseInt(oldPrefectureId) <= 47){
+            this.oldPrefectureId = oldPrefectureId;
+        }
+        else{
+            throw new Exception();
+        }
     }
 
     public String getOldAddress() {
@@ -99,8 +104,13 @@ public class UserOrderForm {
         return newPrefectureId;
     }
 
-    public void setNewPrefectureId(String newPrefectureId) {
-        this.newPrefectureId = newPrefectureId;
+    public void setNewPrefectureId(String newPrefectureId) throws Exception{
+        if (1 <= Integer.parseInt(newPrefectureId) && Integer.parseInt(newPrefectureId) <= 47){
+            this.newPrefectureId = newPrefectureId;
+        }
+        else{
+            throw new Exception();
+        }
     }
 
     public String getNewAddress() {
