@@ -312,3 +312,7 @@ td {
     color: #FF0000;
     font-size: 14px;
 }
+
+.form-control::placeholder {
+    color: #c0c0c0;
+}
