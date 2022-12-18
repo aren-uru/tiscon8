@@ -29,7 +29,7 @@
           <ul th:if="${#fields.hasErrors('customerName')}">
             <li class="error" th:each="err : ${#fields.errors('customerName')}" th:text="${err}"></li>
           </ul>
-          <input type="text" id="customerName" name="customerName" th:field="*{customerName}" class="form-control" value="山田太郎" placeholder="例)山田太郎"/>
+          <input type="text" id="customerName" name="customerName" th:field="*{customerName}" class="form-control" value="山田太郎" placeholder="例）山田太郎"/>
         </div>
         <div class="form-group">
           <label for="tel">連絡先TEL (ハイフンなしで入力してください。)</label>
@@ -100,8 +100,8 @@
         </div>
         <div class="form-group">
           <label for="bicycle">自転車の個数</label>
-          <ul th:if="${#fields.hasErrors('customerName')}">
-            <li class="error" th:each="err : ${#fields.errors('customerName')}" th:text="${err}"></li>
+          <ul th:if="${#fields.hasErrors('bicycle')}">
+            <li class="error" th:each="err : ${#fields.errors('bicycle')}" th:text="${err}"></li>
           </ul>
           <input type="text" id="bicycle" name="bicycle" th:field="*{bicycle}" class="form-control" value="1" placeholder="例）1"/>
         </div>
